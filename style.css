@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ccc;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.header {
+    background: url(images/todobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    font-size: 2rem;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.clear {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    opacity: 0.8;
+    font-size: 3rem;
+    
+}
+
+.clear i {
+    transition: all 0.8s ease-out;
+}
+
+
+.clear i:hover {
+    transform: rotate(360deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.content {
+    padding: 20px;
+    position: relative;
+    overflow: scroll;
+    max-height: 300px;
+}
+
+ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul li {
+    padding: 15px 0;
+    display: inline-block;
+}
+
+li {
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+li span {
+    color: dimgrey;
+}
+
+
+li i:first-child {
+    color: coral;
+    margin-right: 2rem;
+}
+
+li i:last-child{
+    color: firebrick;
+    float: right;
+}
+
+.add-item {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.1); 
+}
+
+.add-item i {
+    color: coral;
+    margin-right: 2rem;
+    vertical-align: middle;
+}
+
+.add-item input {
+    border: none;
+    padding:5px 20px;
+    color: coral;
+    background-color:transparent;
+}
+
+.add-item input::placeholder{
+    font-size: 1.5rem;
+    color: coral;
+    opacity: 0.5;
+}
+
+.item {
+    transition:  0.8s ease;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
