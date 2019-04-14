@@ -67,7 +67,7 @@ body {
 .content {
     padding: 20px;
     position: relative;
-    overflow: scroll;
+    overflow: auto;
     max-height: 300px;
 }
 
